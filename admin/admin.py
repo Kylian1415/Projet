@@ -26,15 +26,15 @@ def creerTable():
     c.execute('''CREATE TABLE equipment (
                     id_equip INTEGER PRIMARY KEY,
                     nom_equip TEXT,
-                    id_instal INTEGER''')
+                    id_instal INTEGER)''')
                     # FOREIGN KEY(id_instal) REFERENCES installation(id_instal))''')
     c.execute('''CREATE TABLE activite (
                     id_activ INTEGER PRIMARY KEY,
                     nom_activ TEXT)''')
     c.execute('''CREATE TABLE equipments_activites (
                     id_equip INTEGER,
-                    id_activ INTEGER,
-                    PRIMARY KEY(id_equip, id_activ)''')
+                    id_activ INTEGER)''')
+                    # PRIMARY KEY(id_equip, id_activ)''')
                     # FOREIGN KEY(id_equip) REFERENCES equipment(id_equip),
                     # FOREIGN KEY(id_activ) REFERENCES activite(id_activ))''')
     conn.close
