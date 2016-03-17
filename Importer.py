@@ -6,6 +6,6 @@ from admin.admin import creerTable
 
 creerTable()
 
-importActivities('reader/csv/activites.csv')
+importActivities('reader/csv/activity.csv')
 
 importEquipments('reader/csv/equipment.csv')
