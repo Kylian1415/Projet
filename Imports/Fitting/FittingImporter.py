@@ -12,9 +12,9 @@ def importFitting(filename):
 		for row in fittingReader:
 			try:
 				fittingLine = parseRow(row)
-				if fittingLine.code not in importedFitting:
+				if fittingLine.id_instal not in importedFitting:
 					insertFitting(fittingLine)
-					importedFitting.append(fittingLine.code)
+					importedFitting.append(fittingLine.id_instal)
 					# print(equipmentLine)
 			except ValueError:
 				print("Problem with row {} : {}".format(fittingReader.line_num, ','.join(row)))
