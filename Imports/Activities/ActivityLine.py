@@ -1,7 +1,7 @@
 class ActivityLine:
-	def __init__(self, code, label):
-		self.code = code
-		self.label = label
+	def __init__(self, id_activ, nom_activ):
+		self.id_activ = id_activ
+		self.nom_activ = nom_activ
 
 	def __repr__(self):
-		return "{} - {}".format(self.code, self.label)
+		return "{} - {}".format(self.id_activ, self.nom_activ)
