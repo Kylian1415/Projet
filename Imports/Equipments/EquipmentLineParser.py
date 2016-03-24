@@ -1,7 +1,7 @@
 from Imports.Equipments.EquipmentLine import EquipmentLine
 
 def parseRow(row):
-    code = int(row[4].strip())
-    label = row[5].strip()
-    code_insta = int(row[2].strip())
-    return EquipmentLine(code, label, code_insta)
+    id_equip = int(row[4].strip())
+    nom_equip = row[5].strip()
+    id_insta = int(row[2].strip())
+    return EquipmentLine(id_equip, nom_equip, id_insta)

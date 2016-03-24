@@ -1,8 +1,8 @@
 class EquipmentLine:
-	def __init__(self, code, label, code_insta):
-		self.code = code
-		self.label = label
-		self.code_insta = code_insta
+	def __init__(self, id_equip, nom_equip, id_instal):
+		self.id_equip = id_equip
+		self.nom_equip = nom_equip
+		self.id_instal = id_instal
 
 	def __repr__(self):
-		return "{} - {} - {}".format(self.code, self.label, self.code_insta)
+		return "{} - {} - {}".format(self.id_equip, self.nom_equip, self.id_instal)
