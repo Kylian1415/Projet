@@ -12,9 +12,9 @@ def importActivities(filename):
 		for row in activitiesReader:
 			try:
 				activityLine = parseRow(row)
-				if activityLine.code not in importedActivities:
+				if activityLine.id_activ not in importedActivities:
 					insertActivity(activityLine)
-					importedActivities.append(activityLine.code)
+					importedActivities.append(activityLine.id_activ)
 					# print(activityLine)
 			except ValueError:
 				print("Problem with row {} : {}".format(activitiesReader.line_num, ','.join(row)))
