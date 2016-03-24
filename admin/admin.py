@@ -38,18 +38,3 @@ def creerTable():
                     # FOREIGN KEY(id_equip) REFERENCES equipment(id_equip),
                     # FOREIGN KEY(id_activ) REFERENCES activite(id_activ))''')
     conn.close
-
-# def addInstallation(numero, nom, adresse, code_postal, ville, latitude, longitude):
-#     c = connect()
-#     c.execute('''INSERT INTO installation (numero, nom, adresse, code_postal, ville, latitude, longitude) VALUES (?, ?, ?, ?, ?, ?, ?, ?)''', (numero, nom, adresse, code_postal, ville, latitude, longitude))
-#     conn.close
-#
-# def addEquipement(numero, nom):
-#     c = connect()
-#     c.execute('''INSERT INTO equipment (numero, nom) VALUES (?, ?)''', (numero, nom))
-#     conn.close
-#
-# def addActivite(numero, nom):
-#     c = connect()
-#     c.execute('''INSERT INTO activite (numero, nom) VALUES (?, ?)''', (numero, nom))
-#     conn.close

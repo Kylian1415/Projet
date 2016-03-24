@@ -12,10 +12,9 @@ def importEquipments(filename):
 		for row in equipmentsReader:
 			try:
 				equipmentLine = parseRow(row)
-				if equipmentLine.code not in importedEquipments:
+				if equipmentLine.id_equip not in importedEquipments:
 					insertEquipment(equipmentLine)
-					importedEquipments.append(equipmentLine.code)
-					# print(equipmentLine)
+					importedEquipments.append(equipmentLine.id_equip)
 			except ValueError:
 				print("Problem with row {} : {}".format(equipmentsReader.line_num, ','.join(row)))
 
