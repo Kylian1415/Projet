@@ -12,7 +12,7 @@ def disconnect():
 def creerTable():
     c = connect()
     c.execute('''DROP TABLE IF EXISTS equipments_activites''')
-    c.execute('''DROP TABLE IF EXISTS activite''')
+    c.execute('''DROP TABLE IF EXISTS activity''')
     c.execute('''DROP TABLE IF EXISTS equipment''')
     c.execute('''DROP TABLE IF EXISTS installation''')
     c.execute('''CREATE TABLE installation (
@@ -28,7 +28,7 @@ def creerTable():
                     nom_equip TEXT,
                     id_instal INTEGER)''')
                     # FOREIGN KEY(id_instal) REFERENCES installation(id_instal))''')
-    c.execute('''CREATE TABLE activite (
+    c.execute('''CREATE TABLE activity (
                     id_activ INTEGER PRIMARY KEY,
                     nom_activ TEXT)''')
     c.execute('''CREATE TABLE equipments_activites (
