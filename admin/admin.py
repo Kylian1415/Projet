@@ -14,8 +14,8 @@ def creerTable():
     c.execute('''DROP TABLE IF EXISTS equipments_activites''')
     c.execute('''DROP TABLE IF EXISTS activity''')
     c.execute('''DROP TABLE IF EXISTS equipment''')
-    c.execute('''DROP TABLE IF EXISTS installation''')
-    c.execute('''CREATE TABLE installation (
+    c.execute('''DROP TABLE IF EXISTS fitting''')
+    c.execute('''CREATE TABLE fitting (
                     id_instal INTEGER PRIMARY KEY,
                     nom_instal TEXT,
                     adresse TEXT,
@@ -37,4 +37,4 @@ def creerTable():
                     # PRIMARY KEY(id_equip, id_activ)''')
                     # FOREIGN KEY(id_equip) REFERENCES equipment(id_equip),
                     # FOREIGN KEY(id_activ) REFERENCES activite(id_activ))''')
-    conn.close
+    disconnect()

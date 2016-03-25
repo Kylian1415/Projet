@@ -14,5 +14,5 @@ creerTable()
 
 # Puis on se sert des méthodes importés pour importer les données
 importActivities('reader/csv/activity.csv')
-importEquipments('reader/csv/equipment.csv')
 importFitting('reader/csv/fitting.csv')
+importEquipments('reader/csv/equipment.csv')
